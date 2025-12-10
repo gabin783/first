@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 취미 소개 new</title>
+    <style>
+        body {
+         background-color: beige;
+         margin: 0;
+         padding: 20px;
+        }
+        h1 {
+        color:blue}
+        h2 {
+        color:rgb(16, 219, 94)}
+        .box {
+        background-color: antiquewhite;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #aaaaaa;
+        border-radius: 8px;
+        }
+        ul {
+        padding-left: 20px;}
+        button {
+        background-color: rgb(232, 218, 245);
+        color:rgb(36, 36, 32);
+        border: none;
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        }
+        button:hover {
+            background-color: #aaaaaa;
+        }
+        .hidden {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>나의 취미 소개 new</h1>
+    <div class="box">
+        <h2>안녕하세요 😄</h2>
+        <p>저는 김가빈 입니다.<br>이 페이지에서 제가 좋아하는 취미들을 간단히 소개해 볼게요.</p>
+        <button onclick="togglehobby()">내용 보이기/숨기기</button>
+    </div>
+     <div>
+      <div id="hobby" class="hidden">
+        <div class="box">
+        <h2>나의 취미 목록</h2>
+        <ul>
+            <li>독서</li>
+            <li>운동</li>
+            <li>영화</li>
+        </ul>
+        </div>
+        <div class="box">
+        <h2>취미 자세히 보기</h2>
+        <h3>📖 독서</h3>
+        <p>자기계발서와 소설을 주로 읽습니다.</p>
+        <h3>⚽ 운동</h3>
+        <p>건강을 위해 운동을 하고 있습니다.</p>
+        <h3>📟 게임</h3>
+        <p>다양한 장르의 게임을 플레이합니다.<p>
+        </div>
+        <div class="box">
+        <h2>나의 작은 목표</h2>
+        <ul>
+            <li>올해 AI 자동화 교육 수료하기</li>
+            <li>건강한 몸 만들기</li>
+        </ul>
+        </div>
+        <div class="box">
+        <h2>마무리 한마디</h2>
+        <p><strong>"좋아하는 취미를 통해 나를 더 잘 알게 되는 중입니다 😊"</strong></p>
+        </div>
+     </div>
+    </div>
+    <script>
+     function togglehobby() {
+     const hobby = document.getElementById('hobby');
+     hobby.classList.toggle('hidden');
+    }
+    </script>
+</body>
+</html>
